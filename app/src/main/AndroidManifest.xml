@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_nova_logo_no_background_1_adobe_express"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_nova_logo_no_background_1_adobe_express"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NovaHumail"
+        tools:targetApi="31">
+        <activity
+            android:name="com.Humail.novahumail.MyEducation"
+            android:exported="false" />
+        <activity
+            android:name="com.Humail.novahumail.AndroidAppProjectsList"
+            android:exported="false" />
+        <activity
+            android:name="com.Humail.novahumail.OnBoarding"
+            android:exported="false" />
+        <activity
+            android:name="com.Humail.novahumail.SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Humail.novahumail.ContactUs"
+            android:exported="false">
+
+        </activity>
+    </application>
+
+</manifest>

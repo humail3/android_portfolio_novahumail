@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_screen_gradient_background"
+    tools:context="com.Humail.novahumail.OnBoarding">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/screen_background_lines_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rectangle_white_dot_backgroung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_contact_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_background_rectangle_gradient"
+        android:drawableLeft="@drawable/ic_baseline_contact_support_24"
+        android:drawablePadding="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Contact"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@color/Secondary"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/btn_my_work"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="@+id/btn_my_work"
+        app:layout_constraintTop_toBottomOf="@+id/btn_my_work" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pc_work_languages_raw_anim" />
+
+    <TextView
+        android:id="@+id/tv_contact_us_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_round_corner_rectangle_transparent_primary"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Nova Humail"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/Secondary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/laptop_raw_anim" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_utubeChnl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn_background_rectangle_gradient"
+        android:drawableLeft="@drawable/education2"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:drawablePadding="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Education"
+        android:textColor="@color/Secondary"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView"
+        app:layout_constraintStart_toStartOf="@+id/lottieAnimationView"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_my_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_background_rectangle_gradient"
+        android:drawableLeft="@drawable/my_work"
+        android:drawablePadding="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:text="My Work"
+        android:textColor="@color/Secondary"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/btn_utubeChnl"
+        app:layout_constraintStart_toStartOf="@+id/btn_utubeChnl"
+        app:layout_constraintTop_toBottomOf="@+id/btn_utubeChnl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

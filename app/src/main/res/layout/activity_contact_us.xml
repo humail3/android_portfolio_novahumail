@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Humail.novahumail.ContactUs">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/screen_background_lines_pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_contact_us_page"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/contact_us_lotty_animation" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_twtr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_background_rectangle_gradient"
+                android:drawableLeft="@drawable/twitter"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Twitter"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/Secondary"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="@+id/btn_insta"
+                app:layout_constraintTop_toBottomOf="@+id/btn_insta" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_insta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_background_rectangle_gradient"
+                android:drawableLeft="@drawable/instagram"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Instagram"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/Secondary"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="@+id/btn_LinkedIn"
+                app:layout_constraintTop_toBottomOf="@+id/btn_LinkedIn" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_LinkedIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_background_rectangle_gradient"
+                android:drawableLeft="@drawable/linkedin"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Linked In"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/Secondary"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="@+id/btn_utubeChnl"
+                app:layout_constraintTop_toBottomOf="@+id/btn_utubeChnl" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_phoneCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_background_rectangle_gradient"
+                android:drawableLeft="@drawable/ic_baseline_call_24"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Phone Call"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/Secondary"
+                android:typeface="serif"
+                app:layout_constraintStart_toStartOf="@+id/btn_bs_computer_science"
+                app:layout_constraintTop_toBottomOf="@+id/btn_bs_computer_science" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_wtspMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_background_rectangle_gradient"
+                android:drawableLeft="@drawable/wtsp_msg"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Whatsapp Message"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/Secondary"
+                android:typeface="serif"
+                app:layout_constraintStart_toStartOf="@+id/btn_phoneCall"
+                app:layout_constraintTop_toBottomOf="@+id/btn_phoneCall" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_wtspCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_background_rectangle_gradient"
+                android:drawableLeft="@drawable/wtsp_call"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Whatsapp Call"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/Secondary"
+                android:typeface="serif"
+                app:layout_constraintStart_toStartOf="@+id/btn_wtspMsg"
+                app:layout_constraintTop_toBottomOf="@+id/btn_wtspMsg" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_bs_computer_science"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/btn_background_rectangle_gradient"
+                android:drawableLeft="@drawable/ic_baseline_message_24"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Text Message"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/Secondary"
+                android:typeface="serif"
+                app:layout_constraintStart_toStartOf="@+id/tv_contact_us_page"
+                app:layout_constraintTop_toBottomOf="@+id/tv_contact_us_page" />
+
+            <TextView
+                android:id="@+id/tv_contact_us_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_round_corner_rectangle_transparent_primary"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Contact Us Page"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/Secondary"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_go_back_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_contact_us_page"
+                app:layout_constraintStart_toStartOf="@+id/tv_contact_us_page"
+                app:layout_constraintTop_toTopOf="@+id/tv_contact_us_page"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_utubeChnl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/btn_background_rectangle_gradient"
+                android:drawableLeft="@drawable/utube"
+                android:drawablePadding="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="YouTube Channel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/Secondary"
+                android:typeface="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_wtspCall" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationView2"
+                android:layout_width="170dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_twtr"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/contact_us_lotty_anim" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
